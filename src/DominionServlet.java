@@ -9,13 +9,13 @@ import java.io.*;
 /**
  * Servlet implementation class DominionServlet
  */
-public class test extends HttpServlet {
+public class DominionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public test() {
+    public DominionServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
