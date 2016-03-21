@@ -11,22 +11,12 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>DominionServlet</display-name>
-    <servlet-name>DominionServlet</servlet-name>
-    <servlet-class>DominionServlet</servlet-class>
+    <display-name>test</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>test</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>DominionServlet</servlet-name>
-    <url-pattern>/DominionServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>lol</display-name>
-    <servlet-name>lol</servlet-name>
-    <servlet-class>lol</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>lol</servlet-name>
-    <url-pattern>/lol</url-pattern>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
   </servlet-mapping>
 </web-app>
