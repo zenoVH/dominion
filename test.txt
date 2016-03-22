@@ -1,8 +1,0 @@
-<<<<<<< Updated upstream
-Zeno was here :)
-=======
-Arnaud was here too :p
->>>>>>> Stashed changes
-
-lol
-jasper
