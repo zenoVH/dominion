@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>Dominion</display-name>
+  <display-name>helloWorld</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -13,7 +13,7 @@
     <description></description>
     <display-name>DominionServlet</display-name>
     <servlet-name>DominionServlet</servlet-name>
-    <servlet-class>DominionServlet</servlet-class>
+    <servlet-class>main.DominionServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>DominionServlet</servlet-name>
@@ -21,12 +21,12 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>lol</display-name>
-    <servlet-name>lol</servlet-name>
-    <servlet-class>lol</servlet-class>
+    <display-name>Play</display-name>
+    <servlet-name>Play</servlet-name>
+    <servlet-class>main.Play</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>lol</servlet-name>
-    <url-pattern>/lol</url-pattern>
+    <servlet-name>Play</servlet-name>
+    <url-pattern>/Play</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -1,0 +1,35 @@
+div {
+    display: inline-block;
+    float: left;
+    width: 200px;
+}
+form {
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+header, section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
