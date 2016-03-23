@@ -1,0 +1,89 @@
+/*---------------------*/
+/*    HTML ELEMENTS    */
+/*---------------------*/
+body {
+    color: #000000;
+    background-image: url('../../images/DominionBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3.8rem;
+    color: #e2e06c;
+    font-family: 'Fredericka the Great', cursive;
+    line-height: 150px;
+    text-align: center;
+}
+
+/*---------------------*/
+/*  REUSABLE CLASSES   */
+/*---------------------*/
+.hide {
+    display: none;
+}
+
+#loginPage {
+    z-index: 50;
+    border: solid 1px #f39920;
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50px;
+    left: 38%;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+#loginPage label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#loginPage input[type='password'], #loginPage input[type='text'] {
+    margin-bottom: 15px;
+}
+
+#loginPage h1 {
+    line-height: 100px;
+}
+
+#startPage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#startPage form {
+    display: inline-block;
+    width: 100px;
+}
+
+#startPage #leftForm {
+    margin-right: 196px;
+}
+
+/*---------------------*/
+/* CONTAINING ELEMENTS */
+/*---------------------*/
+header {
+    height: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type='button'] {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 50px;
+}
+
+/*------------------------*/
+/* PAGE SPECIFIC ELEMENTS */
+/*------------------------*/
+
+/* --- Home --- */
+

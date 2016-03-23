@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dominion</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="startPage">
+    <header>
+        <h1>Dominion</h1>
+    </header>
+
+    <form id="leftForm">
+        <input type="button" value="Play" id="play">
+        <input type="button" value="Challenge" id="challenge">
+        <input type="button" value="Quit" id="quit">
+    </form>
+
+    <form>
+        <input type="button" value="Sign in" id="signin">
+        <input type="button" value="Sign up" id="signup">
+        <input type="button" value="Leaderboard" id="leaderboard">
+    </form>
+</div>
+
+<div id="loginPage" class="hide">
+    <h1>Login</h1>
+
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <div id="validate" class="hide">
+            <label for="password">Validate password</label>
+            <input type="password" id="vpassword" name="password">
+        </div>
+
+        <input type="button" value="Cancel" class="cancel">
+        <input type="button" value="Login" id="login">
+    </form>
+</div>
+
+<div id="menu" class="hide">
+    <h1>Dominion</h1>
+    <h2>How many players are there?</h2>
+</div>
+
+<script src="assets/js/jquery-2.2.2.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
