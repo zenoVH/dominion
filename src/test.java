@@ -1,5 +1,6 @@
 
 //Arnaud is home en robbe is niet home
+import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -8,13 +9,13 @@ import java.io.*;
 /**
  * Servlet implementation class DominionServlet
  */
-public class DominionServlet extends HttpServlet {
+public class test extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DominionServlet() {
+    public test() {
         super();
         // TODO Auto-generated constructor stub
     }

@@ -11,13 +11,19 @@
   </welcome-file-list>
   <servlet>
     <description></description>
+<<<<<<< HEAD
     <display-name>DominionServlet</display-name>
     <servlet-name>DominionServlet</servlet-name>
     <servlet-class>main.DominionServlet</servlet-class>
+=======
+    <display-name>test</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>test</servlet-class>
+>>>>>>> parent of efb71d3... Working Version
   </servlet>
   <servlet-mapping>
-    <servlet-name>DominionServlet</servlet-name>
-    <url-pattern>/DominionServlet</url-pattern>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
   </servlet-mapping>
 <<<<<<< HEAD
 =======
