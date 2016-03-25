@@ -6,27 +6,30 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
 
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.theme.css"/>
+
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Uncial+Antiqua' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<header>
+    <h1>Dominion</h1>
+</header>
 
 <div id="startPage">
-    <header>
-        <h1>Dominion</h1>
-    </header>
+    <ul class="stoneButton">
+        <li id="play"><a href="#">Play</a></li>
+        <li id="challenge"><a href="#">Challenge</a></li>
+        <li id="quit"><a href="http://www.google.com">Quit</a></li>
+    </ul>
 
-    <form id="leftForm">
-        <input type="button" value="Play" id="play">
-        <input type="button" value="Challenge" id="challenge">
-        <input type="button" value="Quit" id="quit">
-    </form>
-
-    <form>
-        <input type="button" value="Sign in" id="signin">
-        <input type="button" value="Sign up" id="signup">
-        <input type="button" value="Leaderboard" id="leaderboard">
-    </form>
+    <ul id="rightUl" class="stoneButton">
+        <li id="signin"><a href="#">Sign in</a></li>
+        <li id="signup"><a href="#">Sign up</a></li>
+        <li id="leaderboard"><a href="#">leaderboard</a></li>
+    </ul>
 </div>
 
 <div id="loginPage" class="hide">
@@ -42,6 +45,7 @@
         <div id="validate" class="hide">
             <label for="password">Validate password</label>
             <input type="password" id="vpassword" name="password">
+            <p id="match"></p>
         </div>
 
         <input type="button" value="Cancel" class="cancel">
@@ -50,11 +54,24 @@
 </div>
 
 <div id="menu" class="hide">
-    <h1>Dominion</h1>
     <h2>How many players are there?</h2>
+
+    <ul class="stoneButton">
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+    </ul>
 </div>
 
+
+
+<a id="mute"></a>
+<audio id="music" autoplay loop>
+    <source src="assets/media/song.m4a">
+</audio>
+
 <script src="assets/js/jquery-2.2.2.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
