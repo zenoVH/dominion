@@ -20,15 +20,15 @@
 
 <div id="startPage">
     <ul class="stoneButton">
-        <li id="play"><a href="#">Play</a></li>
-        <li id="challenge"><a href="#">Challenge</a></li>
+        <li id="play">Play</li>
+        <li id="challenge">Challenge</li>
         <li id="quit"><a href="http://www.google.com">Quit</a></li>
     </ul>
 
     <ul id="rightUl" class="stoneButton">
-        <li id="signin"><a href="#">Sign in</a></li>
-        <li id="signup"><a href="#">Sign up</a></li>
-        <li id="leaderboard"><a href="#">leaderboard</a></li>
+        <li id="signin">Sign in</li>
+        <li id="signup">Sign up</li>
+        <li id="leaderboard">leaderboard</li>
     </ul>
 </div>
 
@@ -37,33 +37,37 @@
 
     <form>
         <label for="username">Username</label>
-        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username" required>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password" required>
 
         <div id="validate" class="hide">
-            <label for="password">Validate password</label>
-            <input type="password" id="vpassword" name="password">
+            <label for="vpassword">Validate password</label>
+            <input type="password" id="vpassword" name="password" required>
             <p id="match"></p>
         </div>
 
         <input type="button" value="Cancel" class="cancel">
-        <input type="button" value="Login" id="login">
+        <input type="submit" value="Login" id="login">
     </form>
 </div>
 
 <div id="menu" class="hide">
     <h2>How many players are there?</h2>
 
+    <ul class="stoneButton xPlayers">
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <div id="makePlayers"></div>
+
     <ul class="stoneButton">
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
+        <li class="toHome">Back</li>
     </ul>
 </div>
-
-
 
 <a id="mute"></a>
 <audio id="music" autoplay loop>

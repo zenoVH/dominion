@@ -1,6 +1,11 @@
 /**
  * Created by arnaudmeersschaut on 23/03/16.
  */
+
+function draggable() {
+    $('#loginPage').draggable({cursor: "move", containment: "document"});
+}
+
 function showLogin(e) {
     e.preventDefault();
     var id = $(this).attr('id');
@@ -25,13 +30,15 @@ function showMenu(e) {
     $('#menu').show();
 }
 
+function toHomePage() {
+    $('#menu').addClass('hide').hide();
+    $('#makePlayers').html("");
+    $('#startPage').removeClass().show();
+}
+
 function closeLogin(e) {
     e.preventDefault();
     $('#loginPage').hide();
-}
-
-function draggable() {
-    $('#loginPage').draggable({cursor: "move", containment: "document"});
 }
 
 function checkPass(e) {
@@ -69,6 +76,20 @@ function muteMusic(e) {
     }
 }
 
+function addPlayers() {
+    $('#makePlayers').html("");
+    var amount = parseInt($(this).text());
+
+    var html = "<form>";
+    for (var i = 1; i <= amount; i++) {
+        text = "player" + i;
+        html += '<label for="'+ text +'">Player '+ i + '</label>';
+        html += '<input type="'+ text +'" id="'+ text +'" name="'+ text +'" placeholder="Player '+ i +'" >'
+    }
+    html += "</form>";
+    $('#makePlayers').append(html);
+}
+
 $(document).ready(function () {
     draggable();
     $('#vpassword').on('keyup', checkPass);
@@ -76,4 +97,6 @@ $(document).ready(function () {
     $('.cancel').on('click', closeLogin);
     $('#mute').on('click', muteMusic);
     $('#play').on('click', showMenu);
+    $('.toHome').on('click', toHomePage);
+    $('.xPlayers li').on('click', addPlayers);
 });
