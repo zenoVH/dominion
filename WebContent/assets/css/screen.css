@@ -55,14 +55,14 @@ a {
 #loginPage {
     z-index: 50;
     width: 350px;
-    height: 350px;
+    height: 450px;
     position: absolute;
     top: 50px;
     left: 50px;
-    padding: 30px;
-    box-shadow: 7px 7px 10px #393939;
-    background-color: #ffffff;
-    border-radius: 20px;
+    padding: 30px 30px 0 30px;
+    background-image: url(../media/parchment_scroll_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
 }
 
 #loginPage label {
@@ -81,6 +81,9 @@ a {
     font-size: 3rem;
 }
 
+#match {
+    font-size: 1rem;
+}
 /* ---startPage--- */
 #startPage, #menu {
     margin-left: auto;
@@ -139,6 +142,7 @@ a {
 }
 #makePlayers label {
     display: inline-block;
+    width: 90px;
 }
 
 #makePlayers input {

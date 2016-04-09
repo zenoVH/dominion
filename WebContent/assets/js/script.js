@@ -30,7 +30,7 @@ function showMenu(e) {
     $('#menu').show();
 }
 
-function toHomePage() {
+function showStartPage() {
     $('#menu').addClass('hide').hide();
     $('#makePlayers').html("");
     $('#startPage').removeClass().show();
@@ -48,8 +48,8 @@ function checkPass(e) {
 
     var message = document.getElementById('match');
 
-    var goodColor = "#66cc66";
-    var badColor = "#ff6666";
+    var goodColor = "#004E09";
+    var badColor = "#821D22";
 
     if (pass1.value == pass2.value) {
         message.style.color = goodColor;
@@ -81,11 +81,13 @@ function addPlayers() {
     var amount = parseInt($(this).text());
 
     var html = "<form>";
+
     for (var i = 1; i <= amount; i++) {
         text = "player" + i;
         html += '<label for="'+ text +'">Player '+ i + '</label>';
         html += '<input type="'+ text +'" id="'+ text +'" name="'+ text +'" placeholder="Player '+ i +'" >'
     }
+
     html += "</form>";
     $('#makePlayers').append(html);
 }
@@ -97,6 +99,6 @@ $(document).ready(function () {
     $('.cancel').on('click', closeLogin);
     $('#mute').on('click', muteMusic);
     $('#play').on('click', showMenu);
-    $('.toHome').on('click', toHomePage);
+    $('.toHome').on('click', showStartPage);
     $('.xPlayers li').on('click', addPlayers);
 });
