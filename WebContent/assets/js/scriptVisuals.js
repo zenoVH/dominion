@@ -8,18 +8,20 @@ function draggable() {
 
 function showLogin(e) {
     e.preventDefault();
-    var id = $(this).attr('id');
+    var type = $(this).attr('id');
     var selector = $('#loginPage h1');
 
     $('#loginPage').show('clip', '500');
-    if (id == 'signup') {
+
+    if (type == 'signup') {
         selector.text('Sign up');
         $('#validate').show();
     } else {
-        selector.text('Login');
+        selector.text('Sign in');
         $('#validate').hide();
     }
-    document.getElementById("username").focus();
+
+    $('#username').focus();
 }
 
 function showMenu(e) {
@@ -31,9 +33,17 @@ function showMenu(e) {
 }
 
 function showStartPage() {
-    $('#menu').addClass('hide').hide();
+    $('#menu').hide();
+    $('#challengePage').hide();
     $('#makePlayers').html("");
-    $('#startPage').removeClass().show();
+    $('#startPage').show();
+}
+
+function showChallengePage(e) {
+    e.preventDefault();
+
+    $('#startPage').hide();
+    $('#challengePage').show();
 }
 
 function closeLogin(e) {
@@ -65,7 +75,7 @@ function checkPass(e) {
 
 function muteMusic(e) {
     e.preventDefault();
-    muted = document.getElementById('music').muted;
+    var muted = document.getElementById('music').muted;
 
     if (muted == false){
         document.getElementById('music').muted = true;
@@ -94,11 +104,13 @@ function addPlayers() {
 
 $(document).ready(function () {
     draggable();
+    window.onbeforeunload = window.history.forward();
     $('#vpassword').on('keyup', checkPass);
     $('#signin, #signup').on('click', showLogin);
     $('.cancel').on('click', closeLogin);
     $('#mute').on('click', muteMusic);
     $('#play').on('click', showMenu);
     $('.toHome').on('click', showStartPage);
+    $('#challenge').on('click', showChallengePage);
     $('.xPlayers li').on('click', addPlayers);
 });

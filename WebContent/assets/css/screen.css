@@ -12,6 +12,8 @@ body {
     background-image: url('../../images/castle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 1200px;
+    min-height: 800px;
 }
 
 h1 {
@@ -60,7 +62,7 @@ a {
     top: 50px;
     left: 50px;
     padding: 30px 30px 0 30px;
-    background-image: url(../media/parchment_scroll_background.png);
+    background-image: url(../media/parchmentScroll.png);
     background-repeat: no-repeat;
     background-size: 100% 450px;
 }
@@ -84,8 +86,9 @@ a {
 #match {
     font-size: 1rem;
 }
+
 /* ---startPage--- */
-#startPage, #menu {
+#startPage, #menu, #challengePage {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
@@ -131,7 +134,7 @@ a {
     top: 7px;
 }
 
-#menu .stoneButton li {
+#menu .stoneButton li, #challengePage .stoneButton li {
     display: inline-block;
     width: 100px;
     margin-right: 10px;
@@ -150,6 +153,14 @@ a {
     height: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+}
+
+#challengePage {
+     width: 900px;
+ }
+
+#challengePage .stoneButton li {
+    width: 175px;
 }
 
 #mute {
@@ -184,9 +195,93 @@ input[type='button'], input[type='submit'] {
     width: 50%;
 }
 
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
 /*------------------------*/
 /* PAGE SPECIFIC ELEMENTS */
 /*------------------------*/
 
-/* --- Home --- */
+/* --- In Game --- */
+.gameContainer {
+    margin-top: 20px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.gameButton {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.card {
+    width: 100px;
+    display: inline-block;
+}
+
+#leftContainer {
+    float: left;
+    margin-top: 33%;
+}
+
+#centerGame {
+    width: 600px;
+    float: left;
+}
+
+#rightContainer {
+    float: left;
+    margin-left: 70px;
+}
+
+#centerGame #kingdomCardsShop {
+    display: block;
+    width: 525px;
+    height: auto;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rightContainer div {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+}
+
+#playedCards, #hand {
+    width: 600px;
+    height: 160px;
+    border: solid 2px #aaaaaa;
+    margin-bottom: 20px;
+}
+
+#kingdomCardsShop {
+    height: 400px;
+}
+
+aside {
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#currentPlayer {
+    width: 100px;
+    height: 100px;
+    border-radius: 120px;
+    background-color: #31444A;
+    display: inline-block;
+}
+
+#trash {
+    margin-top: 80px;
+    display: inline-block;
+}

@@ -1,14 +1,19 @@
 
-//Arnaud is home en robbe is niet home
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+
+import gameEngine.*;
+
 /**
  * Servlet implementation class DominionServlet
  */
 public class DominionServlet extends HttpServlet {
+	
+	private GameEngine engine = new GameEngine();
+	
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -28,11 +33,13 @@ public class DominionServlet extends HttpServlet {
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
-		response.setCharacterEncoding("utf-8");
-//		PrintWriter out = response.getWriter();
-//		out.println("<html><body><p>Hello Dominion!</p></body></html>"); 
-		System.out.println("ik heb gewerkt..."); 
+		engine.init(2);
+		engine.getPlayer().setName("Arnaud");
+		String text = engine.getPlayer().getName();
+
+	    response.setContentType("text/html");
+	    response.setCharacterEncoding("UTF-8");
+	    response.getWriter().write(text);
 	}
 		
 }

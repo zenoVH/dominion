@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dominion</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.theme.css"/>
+</head>
+<body>
+
+<ul class="stoneButton gameButton">
+    <li><a href="index.html">Quit</a></li>
+    <li>Save and quit</li>
+    <li id="endTurn">End turn</li>
+</ul>
+
+<div class="gameContainer">
+    <aside id="leftContainer">
+        <ul>
+            <li id="actions"><span>1</span> Actions</li>
+            <li id="buys"><span>1</span> Buys</li>
+            <li id="money"><span>0</span> Money</li>
+        </ul>
+
+        <div id="currentPlayer"></div>
+
+        <div id="trash"><img src="images/cards/trash.png" alt="trash" name="trash" class="card"/></div>
+    </aside>
+
+    <section id="centerGame">
+        <div id="kingdomCardsShop">
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+        </div>
+
+        <div id="playedCards">
+
+        </div>
+
+        <div id="hand">
+
+        </div>
+
+    </section>
+
+    <aside id="rightContainer">
+        <div id="moneyShop">
+            <ul>
+                <li><img src="images/cards/treasure/gold.png" alt="gold" name="gold" class="card"/></li>
+                <li><img src="images/cards/treasure/silver.png" alt="silver" name="silver" class="card"/></li>
+                <li><img src="images/cards/treasure/copper.png" alt="copper" name="copper" class="card"/></li>
+            </ul>
+        </div>
+
+        <div id="victoryShop">
+            <ul>
+                <li><img src="images/cards/victory/province.png" alt="province" name="province" class="card"/></li>
+                <li><img src="images/cards/victory/duchy.png" alt="duchy" name="duchy" class="card"/></li>
+                <li><img src="images/cards/victory/estate.png" alt="estate" name="estate" class="card"/></li>
+            </ul>
+        </div>
+
+
+        <div id="deckPile">
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+        </div>
+
+        <div id="discardPile">
+            <img src="images/cards/randomizer.png" alt="copper" name="copper" class="card"/>
+        </div>
+    </aside>
+</div>
+
+<div id="bigImage" class="hide"></div>
+
+<script src="assets/js/jquery-2.2.2.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/scriptVisuals.js"></script>
+<script type="text/javascript" src="assets/js/scriptServlets.js"></script>
+</body>
+</html>
