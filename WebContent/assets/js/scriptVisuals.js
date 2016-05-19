@@ -86,7 +86,9 @@ function muteMusic(e) {
     }
 }
 
-function addPlayers() {
+function addPlayers(e) {
+	e.preventDefault();
+	
     $('#makePlayers').html("");
     var amount = parseInt($(this).text());
 
@@ -102,9 +104,22 @@ function addPlayers() {
     $('#makePlayers').append(html);
 }
 
+function largeCard(e) {
+    e.preventDefault();
+    
+    var source = $(this).attr('src');
+    $('#bigImage').css('background-image', 'url("' + source + '")');
+    $('#bigImage').removeClass();
+}
+
+function removeBig(e) {
+    e.preventDefault();
+
+    $('#bigImage').addClass('hide');
+};
+
 $(document).ready(function () {
     draggable();
-    window.onbeforeunload = window.history.forward();
     $('#vpassword').on('keyup', checkPass);
     $('#signin, #signup').on('click', showLogin);
     $('.cancel').on('click', closeLogin);
@@ -113,4 +128,6 @@ $(document).ready(function () {
     $('.toHome').on('click', showStartPage);
     $('#challenge').on('click', showChallengePage);
     $('.xPlayers li').on('click', addPlayers);
+    $('#kingdomCardsShop img, #rightContainer img').on('hover', largeCard);
+    $('#bigImage').on('click', removeBig);
 });

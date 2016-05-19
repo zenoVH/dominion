@@ -81,10 +81,6 @@ public class player {
 		buys += c; 
 	}
 	
-	public void setName(String name){
-		this.name = name;
-	}
-	
 	public void resetStats(){
 		currentCoins = 0;
 		buys = 1;

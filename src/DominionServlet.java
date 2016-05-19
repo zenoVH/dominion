@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.ArrayList;
 
 import gameEngine.*;
 
@@ -15,7 +16,8 @@ public class DominionServlet extends HttpServlet {
 	private GameEngine engine = new GameEngine();
 	
 	private static final long serialVersionUID = 1L;
-       
+    private String text;
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -27,19 +29,65 @@ public class DominionServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 	
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		engine.init(2);
-		engine.getPlayer().setName("Arnaud");
-		String text = engine.getPlayer().getName();
-
-	    response.setContentType("text/html");
+		String paramValue = request.getParameter("function");
+		
+		response.setContentType("text/html");
 	    response.setCharacterEncoding("UTF-8");
-	    response.getWriter().write(text);
+
+		switch (paramValue) {
+			case "startGame":
+				int players = Integer.parseInt(request.getParameter("players"));
+				engine.init(players);
+				break;
+		
+			case "getActionCards":
+				for (int i = 0; i < engine.getActionCards().size(); i++){
+					String cardName = engine.getActionCards().get(i).getName().toLowerCase();
+					text = "<img src=\"images/cards/" + cardName + ".png\" alt=\""+ cardName +"\" class=\"card\" />";
+					response.getWriter().write(text);
+				}
+				break;
+				
+			case "getHandCards":
+				ArrayList<gameEngine.card> inHand = engine.getPlayer().getHandCards();
+				
+				for (int i = 0; i< inHand.size(); i++){
+					String cardName = inHand.get(i).getName().toString().toLowerCase();
+					text = "<img src=\"images/cards/" + cardName + ".png\" alt=\""+ cardName +"\" class=\"card\" />";
+					response.getWriter().write(text);
+				}
+				break;
+			
+			case "playCard":
+				engine.cardInHandClicked(Integer.parseInt(request.getParameter("cardIndex")));
+				ArrayList<gameEngine.card> playedCards = engine.getPlayer().getPlayedCards();
+				for (int i = 0; i< playedCards.size(); i++){
+					String cardName = playedCards.get(i).getName().toString().toLowerCase();
+					text = "<img src=\"images/cards/" + cardName + ".png\" alt=\""+ cardName +"\" class=\"card\" />";
+					response.getWriter().write(text);
+				}
+				break;
+				
+			case "endTurn":
+				
+				break;
+		}  
+	}
+	
+	public void startGame(int players){
+//		engine.getPlayer().setName("Arnaud");
+		
+//	    for (int i = 0; i < engine.getAllPlayers().size(); i++){
+//	    	engine.getAllPlayers().get(i).setName("name");
+//	    }
 	}
 		
 }
