@@ -87,5 +87,8 @@ public class player {
 		actions = 1;
 	}
 	
+	public void setName(String n){
+		name = n;
+	}
 
 }

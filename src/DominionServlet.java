@@ -46,6 +46,9 @@ public class DominionServlet extends HttpServlet {
 			case "startGame":
 				int players = Integer.parseInt(request.getParameter("players"));
 				engine.init(players);
+				engine.getPlayerX(0).setName("Jasper");
+				engine.getPlayerX(1).setName("Arnaud");
+				response.getWriter().write(engine.getPlayerX(0).getName());
 				break;
 		
 			case "getActionCards":
@@ -61,33 +64,72 @@ public class DominionServlet extends HttpServlet {
 				
 				for (int i = 0; i< inHand.size(); i++){
 					String cardName = inHand.get(i).getName().toString().toLowerCase();
-					text = "<img src=\"images/cards/" + cardName + ".png\" alt=\""+ cardName +"\" class=\"card\" />";
+					String cardType = inHand.get(i).getType();
+					text = "<img src=\"images/cards/" + cardName + ".png\" alt=\""+ cardType +"\" class=\"card\" />";
 					response.getWriter().write(text);
 				}
 				break;
 			
-			case "playCard":
-				engine.cardInHandClicked(Integer.parseInt(request.getParameter("cardIndex")));
+			case "getPlayedCards":
 				ArrayList<gameEngine.card> playedCards = engine.getPlayer().getPlayedCards();
-				for (int i = 0; i< playedCards.size(); i++){
-					String cardName = playedCards.get(i).getName().toString().toLowerCase();
-					text = "<img src=\"images/cards/" + cardName + ".png\" alt=\""+ cardName +"\" class=\"card\" />";
-					response.getWriter().write(text);
-				}
+		        for (int i = 0; i < playedCards.size(); i++) {
+		            String cardName = playedCards.get(i).getName().toString().toLowerCase();
+		            text = "<img src=\"images/cards/" + cardName + ".png\" alt=\"" + cardName + "\" class=\"card\" />";
+		            response.getWriter().write(text);
+		        }
 				break;
 				
-			case "endTurn":
+			case "playCard":
+				engine.cardInHandClicked(Integer.parseInt(request.getParameter("cardIndex")));
+				break;
 				
+			case "buyCard":
+				String card = (request.getParameter("card"));
+				buyCard(card);
+				break;
+				
+			case "getCoins":
+	            response.getWriter().write(Integer.toString(engine.getPlayer().getCurrentCoins()));
+	            break;
+	            
+			case "getBuys":
+				response.getWriter().write(Integer.toString(engine.getPlayer().getBuys()));
+				break;
+	            
+			case "endTurn":
+				engine.nextTurn();
+				response.getWriter().write(engine.getPlayer().getName());
 				break;
 		}  
 	}
+
+	private void buyCard(String card){
+		if(card == "copper"){
+			engine.buyCard(cardtype.COPPER.add());
+		}
+		else if(card == "silver"){
+			engine.buyCard(cardtype.SILVER.add());
+		}
+		else if(card == "gold"){
+			engine.buyCard(cardtype.GOLD.add());
+		}
+		else if(card == "estate"){
+			engine.buyCard(cardtype.ESTATE.add());
+		}
+		else if(card == "dutchy"){
+			engine.buyCard(cardtype.DUTCHY.add());
+		}
+		else if(card == "province"){
+			engine.buyCard(cardtype.PROVINCE.add());
+		}
+	}
 	
-	public void startGame(int players){
+//	private void startGame(int players){
 //		engine.getPlayer().setName("Arnaud");
 		
 //	    for (int i = 0; i < engine.getAllPlayers().size(); i++){
 //	    	engine.getAllPlayers().get(i).setName("name");
 //	    }
-	}
+//	}
 		
 }

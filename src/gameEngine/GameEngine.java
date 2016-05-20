@@ -21,8 +21,7 @@ public class GameEngine {
 		}
 		currentplayer = 0;
 		
-		randomizeActionsCards();
-		
+		randomizeActionsCards();		
 	}
 	
 	public void nextTurn(){
@@ -104,6 +103,10 @@ public class GameEngine {
 			actionCards.remove(0);
 		}
 		
+	}
+	
+	public player getPlayerX(int i){
+		return players.get(i);
 	}
 	
 	public player getPlayer(){

@@ -102,21 +102,8 @@ function addPlayers(e) {
 
     html += "</form>";
     $('#makePlayers').append(html);
+
 }
-
-function largeCard(e) {
-    e.preventDefault();
-    
-    var source = $(this).attr('src');
-    $('#bigImage').css('background-image', 'url("' + source + '")');
-    $('#bigImage').removeClass();
-}
-
-function removeBig(e) {
-    e.preventDefault();
-
-    $('#bigImage').addClass('hide');
-};
 
 $(document).ready(function () {
     draggable();
@@ -128,6 +115,4 @@ $(document).ready(function () {
     $('.toHome').on('click', showStartPage);
     $('#challenge').on('click', showChallengePage);
     $('.xPlayers li').on('click', addPlayers);
-    $('#kingdomCardsShop img, #rightContainer img').on('hover', largeCard);
-    $('#bigImage').on('click', removeBig);
 });

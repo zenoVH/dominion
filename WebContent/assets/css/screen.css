@@ -278,15 +278,15 @@ aside {
 }
 
 #currentPlayer {
-    margin-top: 50px;
-    font-size: 1.8rem;
+    width: 100px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 50px;
+    background-color: #31444A;
+    text-align: center;
 }
 
 #circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 120px;
-    background-color: #31444A;
     display: inline-block;
 }
 

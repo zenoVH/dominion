@@ -2,48 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b190d81f-4352-4e3f-9d1c-d3d4c17eedba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/adventurer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/bureaucrat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/cellar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/chancellor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/chapel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/council_room.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/feast.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/festival.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/gardens.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/laboratory.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/library.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/market.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/militia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/mine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/moat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/moneylender.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/remodel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/smithy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/spy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/thief.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/throne_room.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/village.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/witch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/woodcutter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/action/workshop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/treasure/copper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/treasure/gold.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/treasure/potion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/treasure/silver.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/victory/duchy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/victory/estate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/cards/victory/province.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/DominionServlet.class" afterPath="$PROJECT_DIR$/build/classes/DominionServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gameEngine/player.class" afterPath="$PROJECT_DIR$/build/classes/gameEngine/player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/assets/css/screen.css" afterPath="$PROJECT_DIR$/WebContent/assets/css/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" afterPath="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js" afterPath="$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/inGame.html" afterPath="$PROJECT_DIR$/WebContent/inGame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/index.html" afterPath="$PROJECT_DIR$/WebContent/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DominionServlet.java" afterPath="$PROJECT_DIR$/src/DominionServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameEngine/player.java" afterPath="$PROJECT_DIR$/src/gameEngine/player.java" />
     </list>
     <ignored path="dominion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="91" column="73" selection-start-line="91" selection-start-column="73" selection-end-line="91" selection-end-column="73" />
+            <state relative-caret-position="360">
+              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -85,8 +50,8 @@
       <file leaf-file-name="screen.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/css/screen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="299" column="23" selection-start-line="299" selection-start-column="23" selection-end-line="299" selection-end-column="23" />
+            <state relative-caret-position="317">
+              <caret line="271" column="22" selection-start-line="271" selection-start-column="22" selection-end-line="271" selection-end-column="22" />
               <folding>
                 <element signature="e#3105#3389#0" expanded="false" />
               </folding>
@@ -97,18 +62,18 @@
       <file leaf-file-name="inGame.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/inGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="317">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scriptVisuals.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scriptVisuals.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#draggable#0" expanded="false" />
                 <element signature="n#!!block;n#draggable#0" expanded="false" />
@@ -119,9 +84,6 @@
                 <element signature="n#!!block;n#closeLogin#0" expanded="false" />
                 <element signature="n#!!block;n#checkPass#0" expanded="false" />
                 <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-                <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-                <element signature="n#!!block;n#largeCard#0" expanded="false" />
-                <element signature="n#!!block;n#removeBig#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -130,9 +92,11 @@
       <file leaf-file-name="scriptServlets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="1110">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+              <folding>
+                <marker date="1463737399000" expanded="true" signature="75:178" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,9 +123,9 @@
         <option value="$PROJECT_DIR$/WebContent/assets/js/script.js" />
         <option value="$PROJECT_DIR$/WebContent/index.html" />
         <option value="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" />
-        <option value="$PROJECT_DIR$/WebContent/inGame.html" />
-        <option value="$PROJECT_DIR$/WebContent/assets/css/screen.css" />
         <option value="$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/css/screen.css" />
+        <option value="$PROJECT_DIR$/WebContent/inGame.html" />
       </list>
     </option>
   </component>
@@ -272,6 +236,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -295,10 +263,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dominion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dominion" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,14 +296,14 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/WebContent/assets/media" />
-      <recent name="$PROJECT_DIR$/WebContent/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/WebContent/assets/media" />
       <recent name="$PROJECT_DIR$/WebContent/assets/js" />
       <recent name="$PROJECT_DIR$/WebContent/assets/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WebContent/assets/media" />
+      <recent name="$PROJECT_DIR$/WebContent/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -373,11 +359,14 @@
       <workItem from="1463475133924" duration="160000" />
       <workItem from="1463482585398" duration="264000" />
       <workItem from="1463556424261" duration="3599000" />
+      <workItem from="1463651307243" duration="349000" />
+      <workItem from="1463734724309" duration="505000" />
+      <workItem from="1463737922119" duration="431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10200000" />
+    <option name="totallyTimeSpent" value="11485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -436,9 +425,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -482,9 +468,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -528,9 +511,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -574,9 +554,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -620,9 +597,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,9 +640,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,9 +683,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,9 +726,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,9 +769,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,9 +812,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -896,9 +855,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -942,9 +898,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -988,9 +941,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1034,9 +984,6 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1081,49 +1028,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="91" column="73" selection-start-line="91" selection-start-column="73" selection-end-line="91" selection-end-column="73" />
+        <state relative-caret-position="1110">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#audio#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/inGame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="299" column="23" selection-start-line="299" selection-start-column="23" selection-end-line="299" selection-end-column="23" />
-          <folding>
-            <element signature="e#3105#3389#0" expanded="false" />
+            <marker date="1463737399000" expanded="true" signature="75:178" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="102" column="1" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#draggable#0" expanded="false" />
             <element signature="n#!!block;n#draggable#0" expanded="false" />
@@ -1134,9 +1050,39 @@
             <element signature="n#!!block;n#closeLogin#0" expanded="false" />
             <element signature="n#!!block;n#checkPass#0" expanded="false" />
             <element signature="n#!!block;n#muteMusic#0" expanded="false" />
-            <element signature="n#!!block;n#addPlayers#0" expanded="false" />
-            <element signature="n#!!block;n#largeCard#0" expanded="false" />
-            <element signature="n#!!block;n#removeBig#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/inGame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/css/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="271" column="22" selection-start-line="271" selection-start-column="22" selection-end-line="271" selection-end-column="22" />
+          <folding>
+            <element signature="e#3105#3389#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#audio#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
