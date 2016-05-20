@@ -33,6 +33,16 @@ public class GameEngine {
 			currentplayer++;
 		}
 		
+		//store played cards in deck
+        for (int i = 0; i < getPlayer().getPlayedCards().size(); i++) {
+            getPlayer().getDeck().getCards().add(getPlayer().getPlayedCards().get(i));
+        }
+       
+        //store hand cards in deck
+        for (int i = 0; i < getPlayer().getHandCards().size(); i++) {
+            getPlayer().getDeck().getCards().add(getPlayer().getHandCards().get(i));
+        }
+		
 		getPlayer().resetStats();
 		
 		getPlayer().getDeck().shuffleDeck();
