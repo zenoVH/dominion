@@ -29,12 +29,7 @@ function getCurrentPlayer() {
 
 function endTurn() {
 	$.get("DominionServlet", {"function":"endTurn"});
-	getCurrentPlayer();
-    getHandCards();
-    getBuys();
-    getCoins();
-    getActions();
-    getPlayedCards();
+	refreshData();
 }
 
 function getHandCards(){
@@ -81,13 +76,15 @@ function playCard(e){
         $('#playedCards').html(responseText);
     });
     
-    getPlayedCards();
-    getCoins();
-    
     if($(this).attr('alt') != "Victory"){  
         $(this).remove();
     }
     
+    getCoins();
+	getBuys();
+	getActions;
+	getHandCards();
+	getPlayedCards();
 }
 
 function buyCard(e) {
@@ -99,6 +96,17 @@ function buyCard(e) {
 	
 	getCoins();
 	getBuys();
+	getActions();
+}
+
+function refreshData(){
+	getCurrentPlayer();
+	getActionCards();
+	getCoins();
+	getBuys();
+	getActions();
+	getPlayedCards();
+	getHandCards();
 }
 
 $(document).ready(function () {
@@ -107,13 +115,7 @@ $(document).ready(function () {
     
     if (top.location.pathname === '/Dominion/inGame.html')
     {
-    	getCurrentPlayer();
-    	getActionCards();
-    	getCoins();
-    	getBuys();
-    	getActions;
-    	setTimeout(getPlayedCards(), 5000);
-    	setTimeout(getHandCards(), 5000);
+    	refreshData();
     }
     window.onbeforeunload = window.history.forward();
 });
