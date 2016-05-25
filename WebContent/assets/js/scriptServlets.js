@@ -4,7 +4,19 @@
 
 function startGame() {
 	window.location.href = "inGame.html";
-	$.get("DominionServlet", {"function":"startGame", "players":"2"}, function(responseText) {
+
+    var players = new Array();
+    $('#makePlayers input[type=text]').each(function(){
+        if ($(this).val() == ""){
+            players.push($(this).attr('placeholder'))
+        } else {
+            players.push($(this).val());
+        }
+    });
+    
+    console.log(players);
+    
+	$.get("DominionServlet", {"function":"startGame", "players[]": players}, function(responseText) {
         $("#currentPlayer").html(responseText);
     });
 }
@@ -21,6 +33,7 @@ function endTurn() {
     getHandCards();
     getBuys();
     getCoins();
+    getActions();
     getPlayedCards();
 }
 
@@ -51,6 +64,12 @@ function getCoins(){
 function getBuys(){
 	$.get("DominionServlet", {"function":"getBuys"}, function(responseText) {
         $('#buys span').html(responseText);
+    });
+}
+
+function getActions(){
+	$.get("DominionServlet", {"function":"getActions"}, function(responseText) {
+        $('#actions span').html(responseText);
     });
 }
 
@@ -91,6 +110,8 @@ $(document).ready(function () {
     	getCurrentPlayer();
     	getActionCards();
     	getCoins();
+    	getBuys();
+    	getActions;
     	setTimeout(getPlayedCards(), 5000);
     	setTimeout(getHandCards(), 5000);
     }

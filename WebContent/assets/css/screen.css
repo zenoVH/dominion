@@ -227,7 +227,7 @@ a {
 
 #leftContainer {
     float: left;
-    margin-top: 33%;
+    margin-top: 25%;
 }
 
 #centerGame {
@@ -259,7 +259,6 @@ a {
 #playedCards, #hand {
     width: 600px;
     height: 160px;
-    border: solid 2px #aaaaaa;
     margin-bottom: 20px;
 }
 
@@ -295,12 +294,6 @@ aside {
     display: inline-block;
 }
 
-#bigImage {
-    z-index: 101;
-    position: absolute;
-    width: 200px;
-    height: 318px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 40%;
+#endTurn {
+    width: 120px;
 }

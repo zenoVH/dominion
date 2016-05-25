@@ -12,6 +12,8 @@ public class player {
 	private int buys = 1;
 	private int actions = 1;
 	
+	public int victoryPoints = 0;
+	
 	public player(String name){
 		this.name = name;
 		deck = new deck();
@@ -21,11 +23,32 @@ public class player {
 	public void fillHand(){
 		
 		int amount = 5 - handCards.size();
+		addCard(amount);
+		
+	}
+	
+	public void addCard(int amount){
 		for (int i = 0; i < amount; i++) {
 			handCards.add(deck.getCards().get(0));
 			deck.getCards().remove(0);
 		}
-		
+	}
+	
+	public void addSpecificCard(card c, int index){
+		deck.getCards().add(index, c);
+	}
+	
+	public void flushPlayedCards(){
+		for (int i = 0; i < getPlayedCards().size(); i++) {
+			getDeck().getCards().add(getPlayedCards().get(i));
+		}
+		getPlayedCards().clear();
+	}
+	public void flushHandCards(){
+		for (int i = 0; i < getHandCards().size(); i++) {
+			getDeck().getCards().add(getHandCards().get(i));
+		}
+		getHandCards().clear();
 	}
 	
 	//Getters
@@ -90,5 +113,5 @@ public class player {
 	public void setName(String n){
 		name = n;
 	}
-
+	
 }

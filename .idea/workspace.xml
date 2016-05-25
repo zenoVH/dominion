@@ -3,12 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b190d81f-4352-4e3f-9d1c-d3d4c17eedba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/DominionServlet.class" afterPath="$PROJECT_DIR$/build/classes/DominionServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gameEngine/GameEngine.class" afterPath="$PROJECT_DIR$/build/classes/gameEngine/GameEngine.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gameEngine/action.class" afterPath="$PROJECT_DIR$/build/classes/gameEngine/action.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gameEngine/cardtype.class" afterPath="$PROJECT_DIR$/build/classes/gameEngine/cardtype.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gameEngine/player.class" afterPath="$PROJECT_DIR$/build/classes/gameEngine/player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/assets/css/screen.css" afterPath="$PROJECT_DIR$/WebContent/assets/css/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" afterPath="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js" afterPath="$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/inGame.html" afterPath="$PROJECT_DIR$/WebContent/inGame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DominionServlet.java" afterPath="$PROJECT_DIR$/src/DominionServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameEngine/GameEngine.java" afterPath="$PROJECT_DIR$/src/gameEngine/GameEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameEngine/action.java" afterPath="$PROJECT_DIR$/src/gameEngine/action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameEngine/cardtype.java" afterPath="$PROJECT_DIR$/src/gameEngine/cardtype.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameEngine/player.java" afterPath="$PROJECT_DIR$/src/gameEngine/player.java" />
     </list>
     <ignored path="dominion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+            <state relative-caret-position="465">
+              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -47,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="screen.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/css/screen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="271" column="22" selection-start-line="271" selection-start-column="22" selection-end-line="271" selection-end-column="22" />
+            <state relative-caret-position="347">
+              <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
               <folding>
                 <element signature="e#3105#3389#0" expanded="false" />
               </folding>
@@ -62,8 +70,8 @@
       <file leaf-file-name="inGame.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/inGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -72,8 +80,8 @@
       <file leaf-file-name="scriptVisuals.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="99" column="101" selection-start-line="99" selection-start-column="101" selection-end-line="99" selection-end-column="101" />
               <folding>
                 <element signature="n#!!doc;n#draggable#0" expanded="false" />
                 <element signature="n#!!block;n#draggable#0" expanded="false" />
@@ -92,10 +100,10 @@
       <file leaf-file-name="scriptServlets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+            <state relative-caret-position="195">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
-                <marker date="1463737399000" expanded="true" signature="75:178" placeholder="{...}" />
+                <marker date="1464183702000" expanded="true" signature="2718:2805" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,10 +130,10 @@
         <option value="$PROJECT_DIR$/WebContent/Index.html" />
         <option value="$PROJECT_DIR$/WebContent/assets/js/script.js" />
         <option value="$PROJECT_DIR$/WebContent/index.html" />
-        <option value="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js" />
-        <option value="$PROJECT_DIR$/WebContent/assets/css/screen.css" />
+        <option value="$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js" />
         <option value="$PROJECT_DIR$/WebContent/inGame.html" />
+        <option value="$PROJECT_DIR$/WebContent/assets/css/screen.css" />
       </list>
     </option>
   </component>
@@ -362,11 +370,13 @@
       <workItem from="1463651307243" duration="349000" />
       <workItem from="1463734724309" duration="505000" />
       <workItem from="1463737922119" duration="431000" />
+      <workItem from="1464178541895" duration="557000" />
+      <workItem from="1464181877016" duration="1040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11485000" />
+    <option name="totallyTimeSpent" value="13082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1026,20 +1036,35 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#audio#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptServlets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+        <state relative-caret-position="195">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
-            <marker date="1463737399000" expanded="true" signature="75:178" placeholder="{...}" />
+            <marker date="1464183702000" expanded="true" signature="2718:2805" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/js/scriptVisuals.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="435">
+          <caret line="99" column="101" selection-start-line="99" selection-start-column="101" selection-end-line="99" selection-end-column="101" />
           <folding>
             <element signature="n#!!doc;n#draggable#0" expanded="false" />
             <element signature="n#!!block;n#draggable#0" expanded="false" />
@@ -1056,33 +1081,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/inGame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="271" column="22" selection-start-line="271" selection-start-column="22" selection-end-line="271" selection-end-column="22" />
+        <state relative-caret-position="347">
+          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
           <folding>
             <element signature="e#3105#3389#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#audio#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

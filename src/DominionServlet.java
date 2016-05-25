@@ -14,6 +14,7 @@ import gameEngine.*;
 public class DominionServlet extends HttpServlet {
 
 	private GameEngine engine = new GameEngine();
+	private ActionHandler ah = new ActionHandler(engine);
 	
 	private static final long serialVersionUID = 1L;
 	private String text;
@@ -47,17 +48,20 @@ public class DominionServlet extends HttpServlet {
 
 		switch (paramValue) {
 		case "startGame":
-			int players = Integer.parseInt(request.getParameter("players"));
-			engine.init(players);
-			engine.getPlayerX(0).setName("Jasper");
-			engine.getPlayerX(1).setName("Arnaud");
+			String[] players = request.getParameterValues("players[]");
+			
+			engine.init(players.length, 20);
+			
+			for (int i = 0; i < players.length - 1; i++){
+				engine.getPlayerX(i).setName(players[i]);
+			}
+			
 			response.getWriter().write(engine.getPlayerX(0).getName());
 			break;
 
 		case "getActionCards":
 			for (int i = 0; i < engine.getActionCards().size(); i++) {
 				String cardName = engine.getActionCards().get(i).getName().toLowerCase();
-				System.out.println("test");
 				text = "<img src=\"images/cards/" + cardName + ".png\" alt=\"" + cardName + "\" class=\"card buyable\" />";
 				response.getWriter().write(text);
 			}
@@ -90,6 +94,7 @@ public class DominionServlet extends HttpServlet {
 		case "buyCard":
 			String card = (request.getParameter("card"));
 			buyCard(card);
+			
 			break;
 
 		case "getCoins":
@@ -98,6 +103,10 @@ public class DominionServlet extends HttpServlet {
 
 		case "getBuys":
 			response.getWriter().write(Integer.toString(engine.getPlayer().getBuys()));
+			break;
+			
+		case "getActions":
+			response.getWriter().write(Integer.toString(engine.getPlayer().getActions()));
 			break;
 
 		case "endTurn":
@@ -138,7 +147,7 @@ public class DominionServlet extends HttpServlet {
 			engine.buyCard(cardtype.PROVINCE.add());
 			break;
 		default:
-
+			ah.buyCard(card);
 		}
 	}
 

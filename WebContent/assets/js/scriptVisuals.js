@@ -97,7 +97,7 @@ function addPlayers(e) {
     for (var i = 1; i <= amount; i++) {
         text = "player" + i;
         html += '<label for="'+ text +'">Player '+ i + '</label>';
-        html += '<input type="'+ text +'" id="'+ text +'" name="'+ text +'" placeholder="Player '+ i +'" >'
+        html += '<input type="text" id="'+ text +'" name="'+ text +'" placeholder="Player '+ i +'" >'
     }
 
     html += "</form>";
