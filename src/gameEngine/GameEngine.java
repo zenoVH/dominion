@@ -44,9 +44,9 @@ public class GameEngine {
         }
 		
 		getPlayer().resetStats();
-		
 		getPlayer().getDeck().shuffleDeck();
 		getPlayer().getPlayedCards().clear();
+		getPlayer().getHandCards().clear();
 		getPlayer().fillHand();
 		
 	}

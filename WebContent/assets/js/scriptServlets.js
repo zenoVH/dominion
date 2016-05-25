@@ -9,10 +9,15 @@ function startGame() {
     });
 }
 
-function endTurn() {
-    $.get("DominionServlet", {"function":"endTurn"}, function(responseText) {
+function getCurrentPlayer() {
+	$.get("DominionServlet", {"function":"getCurrentPlayer"}, function(responseText) {
         $("#currentPlayer").html(responseText);
     });
+}
+
+function endTurn() {
+	$.get("DominionServlet", {"function":"endTurn"});
+	getCurrentPlayer();
     getHandCards();
     getBuys();
     getCoins();
@@ -38,14 +43,12 @@ function getPlayedCards(){
 }
 
 function getCoins(){
-	$('#money span').text("");
 	$.get("DominionServlet", {"function":"getCoins"}, function(responseText) {
         $('#money span').html(responseText);
     });
 }
 
 function getBuys(){
-	$('#buys span').text("");
 	$.get("DominionServlet", {"function":"getBuys"}, function(responseText) {
         $('#buys span').html(responseText);
     });
@@ -71,8 +74,6 @@ function playCard(e){
 function buyCard(e) {
 	e.preventDefault();
 	
-	console.log("buy card");
-	
 	var cardName = $(this).attr('alt');
 	
 	$.get("DominionServlet", {"function":"buyCard", "card": cardName});
@@ -87,6 +88,7 @@ $(document).ready(function () {
     
     if (top.location.pathname === '/Dominion/inGame.html')
     {
+    	getCurrentPlayer();
     	getActionCards();
     	getCoins();
     	setTimeout(getPlayedCards(), 5000);
